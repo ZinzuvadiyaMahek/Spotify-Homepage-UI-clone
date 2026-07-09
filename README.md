@@ -1,2 +1,1 @@
-# Spotify-Homepage-UI-clone
-Developed a pixel-inspired Spotify homepage clone using HTML and CSS, showcasing responsive web design, Flexbox, CSS Grid, and modern UI styling techniques.
+A front-end clone of Spotify's homepage built using HTML5 and CSS3. The project focuses on recreating the layout, structure, and visual styling of the original interface while practicing modern CSS techniques such as flexbox, positioning, and responsive layout design. It demonstrates attention to UI details and strong understanding of front-end design fundamentals.
