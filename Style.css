@@ -1,0 +1,326 @@
+body{ 
+    font-family: "Montserrat", serif;
+    margin:0;
+    background-color: black;
+    color:white;
+    overflow: hidden;
+}
+
+.Main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.Sidebar{
+    background-color:black;
+    width:340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.Main-Content{
+    background-color: #121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow:auto;
+    padding:0 1.5rem 0 1.5rem;
+}
+
+.Music-Player{
+    background-color: black;
+    position:fixed;
+    bottom:0;
+    height:72px;
+    width:100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.Nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    height:100px;
+    padding:0.5rem 0.75rem;
+}
+
+.Nav-Option{
+    line-height: 2.5rem;
+    opacity:0.7;
+    padding:0.5rem 0.75rem;
+}
+
+.Nav-Option:hover{
+    line-height: 2.5rem;
+    opacity:1;
+}
+
+.Nav-Option i{
+    font-size: 1.25rem;
+}
+
+.Nav-Option a{
+    font-size:1rem;
+    padding-left: 1rem;
+}
+
+.Options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height:100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.Lib-Option img{
+    height:1.25rem;
+    width:1.25rem;
+}
+
+.Icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.Icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.Icons i:hover{
+    opacity: 1.2;
+}
+
+.Box{
+    background-color: #232323;
+    border-radius: 1rem;
+    height:8rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding:0.75rem 1rem;
+}
+
+.Box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.Box-p2{
+    font-size: 0.85rem;
+    opacity:0.9;
+}
+
+.Badge{
+    background-color: #fff;
+    border:none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height:2rem;
+    width:fit-content;
+}
+
+.Sticky-Nav{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding:1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.Sticky-Nav-Icons{
+    margin-left:0.8rem;
+}
+
+.Sticky-Nav-Options{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-Item{
+    margin-right: 1rem;
+}
+
+.Dark-Badge{
+    background-color: black;
+    color: white;
+}
+
+.Sticky-Nav-Options{
+    margin-right:2rem;
+}
+
+@media(max-width:1000px){
+    .Hide{
+        display: none;
+    }
+}
+
+.Incard{
+    background-color: #232323;
+    width:150px;
+    border-radius: 0.5rem;
+    padding:1rem;
+    margin:1rem 1rem 1rem 1rem;
+}
+
+.Cards-Container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Incard-Img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.Incard-Title{
+    font-weight: 700;
+}
+
+.Incard-Info{
+    opacity:0.8;
+    font-size:0.75rem;
+}
+
+.Footer{
+    height:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Line{
+    width:90%;
+  height:50%;
+  border-top: 1px solid white;
+  opacity:0.4;
+}
+
+.Music-Player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Album{
+    width:25%;
+}
+
+.Player{
+    width:50%;
+}
+
+.Controls{
+    width:25%;
+}
+
+.Player-Control-Icons{
+    height:1rem;
+    margin-right: 1.75rem;
+    opacity:0.6;
+}
+
+.Player-Controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Player-Control-Icons:hover{
+    opacity:1;
+}
+
+.Playback-Bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Progress-Bar{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Progress-Bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.19rem;
+}
+
+.Progress-Bar::-webkit-slider-thumb{
+    appearance: none;
+    height:1rem;
+    width:1rem;
+    background-color: #1bd760;
+    border-radius:50%;
+    margin-top:-6px;
+}
+
+.Controls{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.Controls {
+    display: flex;
+    justify-content: center;
+}
+
+.Controls i{
+    height:1rem;
+    margin-right: 0.9rem;
+}
+
+.Album{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Album-Picture img{
+    height:4rem;
+    width:4rem;
+    border-radius:5px;
+}
+
+.Song-Name{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 5px;
+}
+
+.Singer{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.Album-Icons i{
+    margin-right:1rem;
+}
+
+.Album-SN p{
+    margin-right:3rem;
+}
